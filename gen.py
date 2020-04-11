@@ -5,8 +5,11 @@ from pathlib import Path
 import sys
 import ntpath
 import imgkit
+import os
 
 pathlist = Path(sys.argv[1]).glob('./*.*')
+if not os.path.exists(sys.argv[2]):
+    os.makedirs(sys.argv[2])
 for path in pathlist:
     path_in_str = str(path)
     file_name_we = str(sys.argv[2]) + "/" + str(ntpath.basename(path_in_str).replace(".", "-")) + ".html"
