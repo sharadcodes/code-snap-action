@@ -9,9 +9,14 @@ inputs:
     description: 'This is the folder which contains the snaps'
     required: true
     default: 'snaps'
+  syntax_theme:
+    description: 'This is the syntax highlighting theme that will be used'
+    required: true
+    default: 'monokai'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.source_folder }}
     - ${{ inputs.output_folder }}
+    - ${{ inputs.syntax_theme }}
