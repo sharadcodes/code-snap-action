@@ -1,5 +1,5 @@
 FROM python
-COPY gen.sh /gen.py
+COPY gen.py /gen.py
 RUN chmod +x /gen.py
 RUN  apt-get update \
   && apt-get install -y wkhtmltopdf \
