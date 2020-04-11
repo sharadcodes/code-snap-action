@@ -1,5 +1,8 @@
 name: 'Code Snap Action'
 description: 'This action snaps all the source files in a particular folder and saves them into another folder inside the workflow'
+branding:
+  icon: 'code'
+  color: 'green'
 inputs:
   source_folder:
     description: 'This is the folder which contains the source files'
