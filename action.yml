@@ -1,5 +1,5 @@
 name: 'Code Snap Action'
-description: 'This action snaps the all the source files in a particular folder saves them into another folder and pushes them to repo'
+description: 'This action snaps the all the source files in a particular folder saves them into another folder'
 inputs:
   source_folder:
     description: 'This is the folder which contains the source files'
